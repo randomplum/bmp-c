@@ -31,7 +31,7 @@ U 1 1 5D4F604F
 P 6150 4375
 F 0 "U6" H 6500 5825 50  0000 C CNN
 F 1 "STM32F103CBUx" H 6675 2900 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 5550 2975 50  0001 R CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm_ThermalVias" H 5550 2975 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 6150 4375 50  0001 C CNN
 	1    6150 4375
 	1    0    0    -1  
@@ -41,8 +41,8 @@ L Power_Protection:USBLC6-2SC6 U1
 U 1 1 5D4F7BB7
 P 3200 6025
 F 0 "U1" V 2850 6300 50  0000 C CNN
-F 1 "USBLC6-2SC6" V 3550 6475 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2450 6425 50  0001 C CNN
+F 1 "USBLC6-2P6" V 3550 6475 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-666" H 2450 6425 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 3400 6375 50  0001 C CNN
 	1    3200 6025
 	0    1    1    0   
