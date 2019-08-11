@@ -26,50 +26,6 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1400 59
 	1    0    0    -1  
 $EndComp
 $Comp
-L Logic_LevelTranslator:74LVC2T45DC U2
-U 1 1 5D4F4469
-P 1700 1225
-F 0 "U2" H 1900 775 50  0000 C CNN
-F 1 "74LVC2T45DC" H 2025 700 50  0000 C CNN
-F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 1700 375 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH2T45.pdf" H 1950 975 50  0001 C CNN
-	1    1700 1225
-	1    0    0    -1  
-$EndComp
-$Comp
-L Logic_LevelTranslator:74LVC2T45DC U3
-U 1 1 5D4F4B29
-P 3300 1225
-F 0 "U3" H 3500 775 50  0000 C CNN
-F 1 "74LVC2T45DC" H 3625 700 50  0000 C CNN
-F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 3300 375 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH2T45.pdf" H 3550 975 50  0001 C CNN
-	1    3300 1225
-	1    0    0    -1  
-$EndComp
-$Comp
-L Logic_LevelTranslator:74LVC2T45DC U4
-U 1 1 5D4F516F
-P 4750 1225
-F 0 "U4" H 4950 775 50  0000 C CNN
-F 1 "74LVC2T45DC" H 5075 700 50  0000 C CNN
-F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 4750 375 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH2T45.pdf" H 5000 975 50  0001 C CNN
-	1    4750 1225
-	1    0    0    -1  
-$EndComp
-$Comp
-L Logic_LevelTranslator:74LVC2T45DC U5
-U 1 1 5D4F572C
-P 6175 1225
-F 0 "U5" H 6375 775 50  0000 C CNN
-F 1 "74LVC2T45DC" H 6500 700 50  0000 C CNN
-F 2 "Package_SO:VSSOP-8_2.3x2mm_P0.5mm" H 6175 375 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH2T45.pdf" H 6425 975 50  0001 C CNN
-	1    6175 1225
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_ST_STM32F1:STM32F103CBUx U6
 U 1 1 5D4F604F
 P 6150 4375
@@ -1132,12 +1088,10 @@ Text Label 7300 5175 2    50   ~ 0
 iRXD
 Wire Wire Line
 	6750 5275 7100 5275
-Wire Wire Line
-	6750 5375 7100 5375
 Text Label 7100 5275 2    50   ~ 0
 USBi_n
 Text Label 7100 5375 2    50   ~ 0
-USBp_n
+USBi_p
 $Comp
 L Connector:TestPoint TP5
 U 1 1 5D7ADD21
@@ -2285,4 +2239,50 @@ Wire Notes Line
 	10950 1925 8925 1925
 Text Notes 8950 2050 0    50   ~ 0
 CONNECTORS
+$Comp
+L Logic_LevelTranslator:SN74LVC2T45YZPR U2
+U 1 1 5EC8FE70
+P 1700 1225
+F 0 "U2" H 1700 636 50  0000 C CNN
+F 1 "SN74LVC2T45YZPR" H 1700 545 50  0000 C CNN
+F 2 "Package_BGA:Texas_DSBGA-8_0.9x1.9mm_Layout2x4_P0.5mm" H 1750 675 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf" H 800 675 50  0001 C CNN
+	1    1700 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_LevelTranslator:SN74LVC2T45YZPR U3
+U 1 1 5EC92BEC
+P 3300 1225
+F 0 "U3" H 3300 636 50  0000 C CNN
+F 1 "SN74LVC2T45YZPR" H 3300 545 50  0000 C CNN
+F 2 "Package_BGA:Texas_DSBGA-8_0.9x1.9mm_Layout2x4_P0.5mm" H 3350 675 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf" H 2400 675 50  0001 C CNN
+	1    3300 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_LevelTranslator:SN74LVC2T45YZPR U4
+U 1 1 5EC93263
+P 4750 1225
+F 0 "U4" H 4750 636 50  0000 C CNN
+F 1 "SN74LVC2T45YZPR" H 4750 545 50  0000 C CNN
+F 2 "Package_BGA:Texas_DSBGA-8_0.9x1.9mm_Layout2x4_P0.5mm" H 4800 675 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf" H 3850 675 50  0001 C CNN
+	1    4750 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_LevelTranslator:SN74LVC2T45YZPR U5
+U 1 1 5EC938C7
+P 6175 1225
+F 0 "U5" H 6175 636 50  0000 C CNN
+F 1 "SN74LVC2T45YZPR" H 6175 545 50  0000 C CNN
+F 2 "Package_BGA:Texas_DSBGA-8_0.9x1.9mm_Layout2x4_P0.5mm" H 6225 675 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf" H 5275 675 50  0001 C CNN
+	1    6175 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5375 6750 5375
 $EndSCHEMATC
