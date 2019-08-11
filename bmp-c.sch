@@ -1296,8 +1296,6 @@ Wire Wire Line
 	5125 6225 5200 6225
 Wire Wire Line
 	5575 6225 5825 6225
-Text Label 5825 6225 2    50   ~ 0
-TPWR
 $Comp
 L Device:C C11
 U 1 1 5DA70CAD
@@ -2208,4 +2206,6 @@ Wire Wire Line
 	1300 4175 1700 4175
 Wire Wire Line
 	1300 3825 1700 3825
+Text Label 5825 6225 2    50   ~ 0
+xTPWR
 $EndSCHEMATC
