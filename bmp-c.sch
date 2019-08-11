@@ -1201,14 +1201,10 @@ Wire Wire Line
 	5450 4275 5150 4275
 Wire Wire Line
 	5450 4375 5150 4375
-Wire Wire Line
-	5450 4475 5050 4475
 Text Label 5150 4275 0    50   ~ 0
 PWR_BR
 Text Label 5150 4375 0    50   ~ 0
 LED0
-Text Label 5050 4475 0    50   ~ 0
-TRACESWO
 Connection ~ 5025 4575
 Wire Wire Line
 	5025 4575 5025 4675
@@ -2080,17 +2076,6 @@ Text Label 9350 4625 0    50   ~ 0
 TCK
 Text Label 9350 4825 0    50   ~ 0
 RST
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5E7C2863
-P 5050 4475
-F 0 "TP3" V 5125 4525 50  0000 L CNN
-F 1 "TRACESWO" V 5050 4650 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 4475 50  0001 C CNN
-F 3 "~" H 5250 4475 50  0001 C CNN
-	1    5050 4475
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9575 3150 9350 3150
 Wire Wire Line
@@ -2208,4 +2193,5 @@ Wire Wire Line
 	1300 3825 1700 3825
 Text Label 5825 6225 2    50   ~ 0
 xTPWR
+NoConn ~ 5450 4475
 $EndSCHEMATC
