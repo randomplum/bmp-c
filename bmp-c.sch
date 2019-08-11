@@ -158,28 +158,6 @@ F 3 "~" H 9775 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Small JP2
-U 1 1 5D541042
-P 5250 4675
-F 0 "JP2" H 5125 4725 50  0000 C CNN
-F 1 "b0" H 5350 4725 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5250 4675 50  0001 C CNN
-F 3 "~" H 5250 4675 50  0001 C CNN
-	1    5250 4675
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP4
-U 1 1 5D542281
-P 5250 4875
-F 0 "JP4" H 5125 4925 50  0000 C CNN
-F 1 "b2" H 5350 4925 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5250 4875 50  0001 C CNN
-F 3 "~" H 5250 4875 50  0001 C CNN
-	1    5250 4875
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Pack04 RN2
 U 1 1 5D4FDAC1
 P 10325 1150
@@ -731,17 +709,6 @@ Wire Notes Line
 Text Notes 775  2025 0    50   ~ 0
 LEDs
 $Comp
-L Device:Jumper_NC_Small JP3
-U 1 1 5D606639
-P 5250 4775
-F 0 "JP3" H 5125 4825 50  0000 C CNN
-F 1 "b1" H 5350 4825 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5250 4775 50  0001 C CNN
-F 3 "~" H 5250 4775 50  0001 C CNN
-	1    5250 4775
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR038
 U 1 1 5D606B80
 P 6500 5975
@@ -1158,14 +1125,6 @@ NoConn ~ 5450 5675
 NoConn ~ 5450 5575
 NoConn ~ 5450 4975
 NoConn ~ 5450 5075
-Wire Wire Line
-	5450 4675 5350 4675
-Wire Wire Line
-	5450 4775 5350 4775
-Wire Wire Line
-	5450 4875 5350 4875
-Wire Wire Line
-	5150 4675 5025 4675
 $Comp
 L power:+3V3 #PWR032
 U 1 1 5D857182
@@ -1179,13 +1138,7 @@ F 3 "" H 4950 4575 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5025 4675 5025 4775
-Wire Wire Line
-	5025 4875 5150 4875
-Wire Wire Line
-	5150 4775 5025 4775
 Connection ~ 5025 4775
-Wire Wire Line
-	5025 4775 5025 4875
 Wire Wire Line
 	4950 4575 5025 4575
 Connection ~ 5025 4675
@@ -1281,21 +1234,6 @@ Text Label 5150 4375 0    50   ~ 0
 LED0
 Text Label 5050 4475 0    50   ~ 0
 TRACESWO
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5D9C13F2
-P 5250 4575
-F 0 "JP1" H 5125 4625 50  0000 C CNN
-F 1 "v0" H 5350 4625 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5250 4575 50  0001 C CNN
-F 3 "~" H 5250 4575 50  0001 C CNN
-	1    5250 4575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 4575 5350 4575
-Wire Wire Line
-	5150 4575 5025 4575
 Connection ~ 5025 4575
 Wire Wire Line
 	5025 4575 5025 4675
@@ -1329,9 +1267,6 @@ Wire Wire Line
 Connection ~ 5025 5375
 Wire Wire Line
 	5025 5375 4950 5375
-Wire Wire Line
-	5025 4975 5025 4875
-Connection ~ 5025 4875
 $Comp
 L power:GND #PWR026
 U 1 1 5DA49C2E
@@ -2285,4 +2220,13 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf" H 5275 675 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 5375 6750 5375
+Wire Wire Line
+	5025 4775 5025 4975
+NoConn ~ 5450 4875
+Wire Wire Line
+	5025 4575 5450 4575
+Wire Wire Line
+	5025 4675 5450 4675
+Wire Wire Line
+	5025 4775 5450 4775
 $EndSCHEMATC
