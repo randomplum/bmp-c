@@ -824,26 +824,7 @@ F 3 "~" H 6725 2450 50  0001 C CNN
 	1    6725 2450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C2
-U 1 1 5D639E69
-P 1500 4000
-F 0 "C2" H 1500 4075 50  0000 L CNN
-F 1 "1u" H 1500 3900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1538 3850 50  0001 C CNN
-F 3 "~" H 1500 4000 50  0001 C CNN
-	1    1500 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 3825 1500 3825
-Wire Wire Line
-	1500 3825 1500 3850
 Connection ~ 1700 3825
-Wire Wire Line
-	1700 4175 1500 4175
-Wire Wire Line
-	1500 4175 1500 4150
 Connection ~ 1700 4175
 Wire Wire Line
 	6100 2600 6100 2775
@@ -1112,12 +1093,6 @@ F 3 "~" H 1500 4175 50  0001 C CNN
 	1    1300 4175
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1500 3825 1300 3825
-Connection ~ 1500 3825
-Wire Wire Line
-	1500 4175 1300 4175
-Connection ~ 1500 4175
 NoConn ~ 5450 3775
 NoConn ~ 5450 3875
 NoConn ~ 5450 3975
@@ -2229,4 +2204,8 @@ Wire Wire Line
 	5025 4675 5450 4675
 Wire Wire Line
 	5025 4775 5450 4775
+Wire Wire Line
+	1300 4175 1700 4175
+Wire Wire Line
+	1300 3825 1700 3825
 $EndSCHEMATC
